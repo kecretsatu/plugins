@@ -148,6 +148,15 @@ public class WebViewBuilder {
     webSettings.setDomStorageEnabled(enableDomStorage);
     webSettings.setJavaScriptCanOpenWindowsAutomatically(javaScriptCanOpenWindowsAutomatically);
     webSettings.setSupportMultipleWindows(supportMultipleWindows);
+    webSettings.setJavaScriptEnabled(true);
+    webSettings.setUseWideViewPort(true);
+    webSettings.setBuiltInZoomControls(true);
+    webSettings.setDisplayZoomControls(false);
+    webSettings.setDomStorageEnabled(true);
+    webSettings.setAllowContentAccess(true);
+    webSettings.setAllowFileAccess(true);
+    webSettings.setAllowFileAccessFromFileURLs(true);
+    webSettings.setAllowUniversalAccessFromFileURLs(true);
     webView.setWebChromeClient(webChromeClient);
     webView.setDownloadListener(downloadListener);
     return webView;
